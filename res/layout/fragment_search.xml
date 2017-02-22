@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/gouwuche"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/shoutuise" >
+
+        <LinearLayout
+            android:id="@+id/search_top_linear_bar"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/search_top_bar_background"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/search_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/search_title_name"
+                    android:layout_width="44dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="商品"
+                    android:textColor="#333333"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="7dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_bottom" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="药品通用名，商品名"
+                android:imeOptions="actionSearch"
+                android:textColorHint="#cbcbcc"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/search_name_bt"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_search_bt_background"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="#333333"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ListView
+                    android:id="@+id/search_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:scrollbars="none" />
+
+                <include layout="@layout/item_search_left_name" />
+            </FrameLayout>
+
+            <ListView
+                android:id="@+id/search_gridview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:cacheColorHint="#00000000"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <include layout="@layout/loading_view" />
+    </FrameLayout>
+
+</LinearLayout>

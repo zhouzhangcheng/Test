@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello!</string>
+
+    <string name="app_name">首推</string>
+    
+    <string name="ActivityMainTitle">首推</string>
+    
+    <string name="main_navigation_home">首页</string>
+    <string name="main_navigation_search">探索</string>
+    <string name="main_navigation_scan">扫码购</string>
+    <string name="main_code_buy">购物车</string>
+    <string name="main_navigation_mone">我的</string>
+    
+    <string name="back">&#xe607;</string>
+    <string name="selectpicture">&#xe60a;</string>
+    <string name="flashlight">&#xe60f;</string>
+    <string name="openflashlight">&#xe610;</string>
+    <string name="home">&#xe600;</string>
+    
+
+    <!-- 条码扫一扫连接地址 -->
+    <!-- <string name="barUrl">http://192.168.1.7:100/</string> -->
+    <string name="barUrl">http://api.m.sosoyy.com/</string>
+    
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+    
+    
+    <string name="evenote_title">分享SDK是一个神奇的SDK</string>
+    <string name="share_content">这分享SDK for Android不仅集成简单、支持如QQ好友、微信、新浪微博、腾讯微博等所有社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK</string>
+    <string name="share_content_short">分享SDK不仅集成简单、支持如微信、新浪微博、腾讯微博等社交平台，而且还有强大的统计分析管理后台，实时了解用户、信息流、回流率、传播效应等数据，详情见官网http://sharesdk.cn @ShareSDK</string>
+    <string name="customer_douban">搜索用户</string>
+    <string name="customer_facebook">获取通知列表</string>
+    <string name="customer_kaixin">获取可能认识的人</string>
+    <string name="customer_nemb">获取推荐话题</string>
+    <string name="customer_renren">上传照片到用户的相册</string>
+    <string name="customer_sina">获取微博主页列表</string>
+    <string name="customer_sohu">获取好友列表</string>
+    <string name="customer_qzone">发表日志到QQ空间</string>
+    <string name="customer_tencent">获取我的粉丝列表</string>
+    <string name="customer_twitter">获取主页列表</string>
+    <string name="customer_youdao">获取笔记本列表</string>
+    <string name="customer_suishenkan">获取搜狐随身看书签列表</string>
+    <string name="customer_tumblr">获取Tumblr用户Post列表</string>
+    <string name="laiwang">来往</string>
+    
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item>
+    	<item name="android:windowIsFloating">true</item>
+    	<item name="android:windowContentOverlay">@null</item>
+    	<item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    	<item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+	</style>
+	
+	<style name="CustomProgressDialog" parent="@style/CustomDialog">
+		<item name="android:windowBackground">@android:color/transparent</item>
+    	<item name="android:windowNoTitle">true</item>
+	</style>
+	<string name="content_description">contentDescription</string>
+	<!-- 软件中提示信息 -->
+	<string name="upload_img">图片上传中，请稍后...</string>
+	<string name="data_load">数据加载中，请稍后...</string>
+	
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	
+
+    <string name="title_activity_expandable">ExpandableActivity</string>
+    <string name="edit">编辑</string>
+    <string name="shop_title">购物车</string>
+    <string name="count_money">合计：￥0</string>
+    <string name="count_goods">去结算</string>
+    
+    
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+    
+    <string name="st30cannotbuymsg">因条码错误等原因造成的匹配失败的商品可在ERP中添加或修改为正确的条码信息，系统将自动同步。</string>
+    <string name="st301del">删除</string>
+</resources>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutAll"
+    android:background="@color/result_minor_text" 
+    android:layout_marginBottom="0px">
+ 
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0px">
+        <TextView
+	    android:layout_width="fill_parent"
+	 	android:layout_height="fill_parent"
+		android:gravity="center"
+	 	android:textColor="#ff000000"
+	 	android:textSize="20dp"
+	 	android:text="返回提示"/>    
+</LinearLayout>
+</RelativeLayout>

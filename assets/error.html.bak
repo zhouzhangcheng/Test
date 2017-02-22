@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>错误页</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/mobile.css" />
+
+</head>
+
+<body>
+
+
+    <div id="slide-panel" class="container-fluid">
+
+        <div class="error-info">
+            <i class="error-icon">&#xe632;</i>
+
+            <div class="error-mess">
+                <p class="error-title">网络请求失败</p>
+
+                <p class="error-subtext">请检查您的网络</p>
+            </div>
+            <a href="" class="btn btn-block btn-default">点击重试</a>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script>
+	function fromAndroid()//Android调用js方法
+	{
+		alert("来自Android调用！");
+	}
+    </script>
+</body>
+
+</html>

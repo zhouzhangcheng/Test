@@ -1,0 +1,174 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutAll"
+    android:background="@color/result_minor_text" 
+    android:layout_marginBottom="0px">
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_above="@+id/ll">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginBottom="0px">
+
+        <LinearLayout
+            android:id="@+id/ll_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image_home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/home_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_navigation_home"
+                android:textColor="@drawable/font_selector" 
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_navigation_search"
+                android:textColor="@drawable/font_selector" 
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image_scan"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/scan_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_navigation_scan"
+                android:textColor="@drawable/font_selector"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/image_buy"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buy_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_code_buy"
+                android:textColor="@drawable/font_selector" 
+                android:textSize="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical" 
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/image_mone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/mone_btn_selector" />
+
+            <TextView
+                android:id="@+id/text_mone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_navigation_mone"
+                android:textColor="@drawable/font_selector" 
+                android:textSize="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent" 
+        android:layout_above="@id/ll" >-->
+        <!-- 
+    <android.support.v4.widget.SwipeRefreshLayout  
+        android:id="@+id/swipe_container"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" 
+        >
+         -->
+         <!--
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />  -->
+    <!-- 
+    </android.support.v4.widget.SwipeRefreshLayout>
+     -->
+<!--</LinearLayout>-->
+</RelativeLayout>

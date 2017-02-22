@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rlred"
+        android:layout_width="5dp"
+        android:layout_height="49dp"
+        android:background="@color/red"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rlred"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/backline"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F3F3F3" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/storeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@+id/backline" >
+
+            <ImageView
+                android:id="@+id/ivCheckGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/storeimg303"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ivCheckGroup"
+                android:background="@drawable/ic_shop" />
+
+            <TextView
+                android:id="@+id/tvStoreName303"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/storeimg303"
+                android:text="店铺名称"
+                android:textColor="#333333"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivShopArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tvStoreName303"
+                android:background="@drawable/back" />
+<!-- 
+            <ImageView
+                android:id="@+id/st30fahuoimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/st30fabuotv303"
+                android:src="@drawable/ic_shop" />
+ -->
+            <TextView
+                android:id="@+id/st30fabuotv303"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/st30baoyoutv303"
+                android:background="@color/gray"
+                android:text="满100发货"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+<!-- 
+            <ImageView
+                android:id="@+id/st30baoyouimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/st30baoyoutv303"
+                android:src="@drawable/ic_shop" />
+ -->
+            <TextView
+                android:id="@+id/st30baoyoutv303"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/storedeleteimg303"
+                android:background="@color/gray"
+                android:text="满200包邮"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/storedeleteimg303"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/del30" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

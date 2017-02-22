@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/backline"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F3F3F3" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/storeinfo"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/backline"
+        android:layout_weight="2" >
+
+        <ImageView
+            android:id="@+id/ivCheckGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivCheckGroup"
+            android:background="@drawable/ic_shop" />
+
+        <TextView
+            android:id="@+id/tvShopNameGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="商家名称"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/ivShopArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tvShopNameGroup"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="删除"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/baoyouline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/storeinfo"
+        android:background="#F3F3F3" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/baoyou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baoyouline"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LowestdeliveryAmount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvLowestdeliveryAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/fahuoe"
+                android:gravity="center_vertical"
+                android:text="不满发货金额"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvbufahuo"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:gravity="center_vertical"
+                android:text="不满发货金额"
+                android:textColor="#FF3333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/baoyouandlowline"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/LowestdeliveryAmount"
+            android:background="#F3F3F3"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LowestFreeShippingAmount"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/baoyouandlowline"
+            android:layout_marginLeft="12dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvLowestFreeShippingAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bubaoyou"
+                android:gravity="center_vertical"
+                android:text="不满包邮金额"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvbubaoyou"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:gravity="center_vertical"
+                android:text="不满发货金额"
+                android:textColor="#FFA800"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvbaoyou"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/baoyou"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="包邮"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

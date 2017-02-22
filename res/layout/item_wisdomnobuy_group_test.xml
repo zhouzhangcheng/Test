@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/backlinenobuy"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F3F3F3" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/nobuystoreinfo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/backlinenobuy" >
+
+        <TextView
+            android:id="@+id/tvzimunobuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="A"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backlinenobuy1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F3F3F3" >
+    </RelativeLayout>
+
+</RelativeLayout>

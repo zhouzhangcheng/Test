@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_search_left_selector"
+    android:visibility="gone"
+    android:id="@+id/item_search_left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:id="@+id/item_search_subclass"
+        android:text="药品"
+        android:textColor="@color/item_search_left_selector"
+        android:textSize="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:background="@drawable/search_pop_background"
+        android:gravity="center"
+        android:text="商品"
+        android:id="@+id/search_good_bt"
+        android:layout_marginTop="2dp"
+        android:textColor="#333333"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/search_pop_background"
+        android:gravity="center"
+        android:text="店铺"
+         android:id="@+id/search_shop_bt"
+        android:textColor="#333333"
+        android:textSize="13dp" />
+
+</LinearLayout>

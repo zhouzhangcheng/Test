@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <include layout="@layout/top_menu_st302" />
+
+        <RelativeLayout
+            android:id="@+id/show_cart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF" >
+
+            <ExpandableListView
+                android:id="@+id/expandableListView302"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/rlBottomBar"
+                android:layout_below="@+id/rlTitleBar"
+                android:childDivider="#F3F3F3"
+                android:divider="#F3F3F3"
+                android:dividerHeight="0.5dp"
+                android:fadingEdge="none"
+                android:listSelector="#00000000"
+                android:longClickable="true"
+                android:scrollingCache="false"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

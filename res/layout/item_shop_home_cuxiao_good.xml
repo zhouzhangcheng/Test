@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/item_shop_home_linear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_pop_background"
+        android:orientation="vertical"
+        android:paddingLeft="6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp" >
+
+            <ImageView
+                android:id="@+id/item_shop_home_image"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/item_shop_home_shoutui"
+                android:layout_width="56dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_shoutui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+            <LinearLayout
+                android:id="@+id/item_shop_home_add"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item_shop_home_old_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#777777"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/item_shop_home_spe_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EA5413"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_shop_home_linear_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/search_pop_background"
+        android:orientation="vertical"
+        android:paddingLeft="6dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp" >
+
+            <ImageView
+                android:id="@+id/item_shop_home_image_2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/item_shop_home_shoutui_2"
+                android:layout_width="56dp"
+                android:layout_height="21dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_shoutui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/item_shop_home_add_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/item_shop_home_old_price_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#777777"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/item_shop_home_spe_price_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#EA5413"
+                    android:textSize="13dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

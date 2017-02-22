@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="筛选条件"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="商品类型"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_orange"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="不限"
+                android:textColor="#EA5413" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="首推联盟"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="普药"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="促销"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radio_rght_r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_rght_b4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_but_orange"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="不限"
+            android:textColor="#EA5413" />
+
+        <RadioButton
+            android:id="@+id/radio_rght_b5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_but_black"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="加价购"
+            android:textColor="#8E8E8E" />
+
+        <RadioButton
+            android:id="@+id/radio_rght_b6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_but_black"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="包邮"
+            android:textColor="#8E8E8E" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="毛率利"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b7"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_orange"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="不限"
+                android:textColor="#EA5413" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b8"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0-20%"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b9"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="20-40%"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b10"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="40-60%"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b11"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="60-80%"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b12"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="80-100%"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="零售价格"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="afterDescendants"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b13"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_orange"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="不限"
+                android:textColor="#EA5413" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b14"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0-20"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b15"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="20-40"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="false"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b16"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="40-60"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b17"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="60-80"
+                android:textColor="#8E8E8E" />
+
+            <RadioButton
+                android:id="@+id/radio_rght_b18"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="80-100"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radio_rght_r7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_rght_b19"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_but_black"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="100以上"
+                android:textColor="#8E8E8E" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/right_soure_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/select_but_orange2"
+        android:text="确认"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

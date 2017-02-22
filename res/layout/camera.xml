@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <com.zxing.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" 
+        android:background="@color/black">
+
+        <Button
+            android:id="@+id/btn_cancel_scan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/back"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/transparent"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        
+        <TextView
+            android:id="@+id/barTxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:text="二维码/条码"
+            android:textSize="18sp" />
+        
+        <Button
+            android:id="@+id/btnpicture"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:text="@string/selectpicture"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:onClick="pickPictureFromAblum" />
+
+        <Button
+            android:id="@+id/flashlight"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnpicture"
+            android:text="@string/flashlight"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:background="@color/transparent"
+            android:onClick="IfOpenLight" >
+        </Button>
+    </RelativeLayout>
+
+</FrameLayout>
